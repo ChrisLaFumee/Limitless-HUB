@@ -6,9 +6,9 @@ const Navbar = () => {
   const toggleContactModal = () => setIsContactOpen(!isContactOpen);
 
   return (
-    <nav className="bg-black text-white py-4 px-6 flex justify-between items-center shadow-md fixed top-0 left-0 right-0 z-50">
+    <nav className="bg-black text-white py-4 px-6 flex items-center shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="text-xl font-bold text-orange-500">Limitless Hub</div>
-      <ul className="flex space-x-2 sm:space-x-4 lg:space-x-6">
+      <ul className="flex space-x-2 sm:space-x-4 lg:space-x-6 ml-8 sm:ml-12 lg:ml-16">
         <li>
           <a href="#hero" className="hover:text-orange-500 transition">
             Home
