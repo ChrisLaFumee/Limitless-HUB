@@ -1,4 +1,7 @@
 import React from 'react';
+import DeskAthleteImg from '/src/assets/The-Desk-Athlete.jpg';
+import GymPlanImg from '/src/assets/No-Guess-Gym_Plan.png';
+import CoachingImg from '/src/assets/LP-Headshot.png';
 
 const Shop = () => {
   return (
@@ -21,7 +24,7 @@ const Shop = () => {
             className="cursor-pointer bg-gray-900 rounded-xl overflow-hidden shadow-lg p-4 hover:shadow-xl hover:ring-2 hover:ring-brand-orange transition"
           >
             <img
-              src="/src/assets/The-Desk-Athlete.jpg"
+              src={DeskAthleteImg}
               alt="Desk Athlete"
               className="w-full h-96 object-cover rounded-md"
             />
@@ -52,7 +55,7 @@ const Shop = () => {
             className="cursor-pointer bg-gray-900 rounded-xl overflow-hidden shadow-lg p-4 hover:shadow-xl hover:ring-2 hover:ring-brand-orange transition"
           >
             <img
-              src="/src/assets/No-Guess-Gym_Plan.png"
+              src={GymPlanImg}
               alt="30-Day Gym Plan"
               className="w-full h-96 object-cover rounded-md"
             />
@@ -82,7 +85,7 @@ const Shop = () => {
             className="cursor-pointer bg-gray-900 rounded-xl overflow-hidden shadow-lg p-4 hover:shadow-xl hover:ring-2 hover:ring-brand-orange transition"
           >
             <img
-              src="/src/assets/LP-Headshot.png"
+              src={CoachingImg}
               alt="Limitless Coaching Blueprint"
               className="w-full h-96 object-cover rounded-md"
             />
