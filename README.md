@@ -27,7 +27,7 @@ www.limitlessprogressions.com
 - **Frontend Framework**: React + Vite
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
-- **Hosting**: [Insert when deployed]
+- **Hosting**: Vercel
 - **3rd Party Tools**: Shopify, Tally.so, Calendly
 
 ---
