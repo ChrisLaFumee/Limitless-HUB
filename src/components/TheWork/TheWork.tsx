@@ -20,7 +20,7 @@ const TheWork = () => {
           {/* Example Card 1 */}
           <div className="bg-gray-900 overflow-hidden shadow-lg p-4 text-center">
             <img
-              src="src\assets\Patricks.jpeg"
+              src="/src/assets/Patricks.jpeg"
               alt="Client Transformation"
               className="w-full h-130 object-cover rounded-md mb-6"
             />
@@ -36,7 +36,7 @@ const TheWork = () => {
           {/* Example Card 2 */}
           <div className="bg-gray-900 overflow-hidden shadow-lg p-4 text-center">
             <img
-              src="src\assets\Harsha.jpeg"
+              src="/src/assets/Harsha.jpeg"
               alt="Client in training"
               className="w-full h-130 object-cover rounded-md mb-6"
             />
@@ -49,7 +49,7 @@ const TheWork = () => {
           {/* Example Card 3 */}
           <div className="bg-gray-900 overflow-hidden shadow-lg p-4 text-center">
             <img
-              src="src\assets\500 dead.jpeg"
+              src="/src/assets/500 dead.jpeg"
               alt="Coach Chris in action"
               className="w-full h-130 object-cover rounded-md mb-6"
             />
