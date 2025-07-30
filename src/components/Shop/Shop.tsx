@@ -3,7 +3,7 @@ import React from 'react';
 const Shop = () => {
   return (
     <section id="shop" className="bg-black text-white py-16 px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-full mx-auto">
         <h2 className="text-4xl font-bold text-orange-500 text-center mb-12">
           Featured Products
         </h2>
@@ -21,9 +21,9 @@ const Shop = () => {
             className="cursor-pointer bg-gray-900 rounded-xl overflow-hidden shadow-lg p-4 hover:shadow-xl hover:ring-2 hover:ring-brand-orange transition"
           >
             <img
-              src="src/assets/The-Desk-Athlete.jpg"
+              src="/src/assets/The-Desk-Athlete.jpg"
               alt="Desk Athlete"
-              className="w-full h-48 object-cover rounded-md"
+              className="w-full h-96 object-cover rounded-md"
             />
             <h3 className="text-xl font-semibold mt-4">The Desk Athlete</h3>
             <p className="text-brand-gray mt-2">
@@ -52,9 +52,9 @@ const Shop = () => {
             className="cursor-pointer bg-gray-900 rounded-xl overflow-hidden shadow-lg p-4 hover:shadow-xl hover:ring-2 hover:ring-brand-orange transition"
           >
             <img
-              src="src/assets/No-Guess-Gym_Plan.png"
+              src="/src/assets/No-Guess-Gym_Plan.png"
               alt="30-Day Gym Plan"
-              className="w-full h-48 object-cover rounded-md"
+              className="w-full h-96 object-cover rounded-md"
             />
             <h3 className="text-xl font-semibold mt-4">No Guess Gym Plan</h3>
             <p className="text-brand-gray mt-2">
@@ -82,9 +82,9 @@ const Shop = () => {
             className="cursor-pointer bg-gray-900 rounded-xl overflow-hidden shadow-lg p-4 hover:shadow-xl hover:ring-2 hover:ring-brand-orange transition"
           >
             <img
-              src="src/assets/LP-Headshot.png"
+              src="/src/assets/LP-Headshot.png"
               alt="Limitless Coaching Blueprint"
-              className="w-full h-48 object-cover rounded-md"
+              className="w-full h-96 object-cover rounded-md"
             />
             <h3 className="text-xl font-semibold mt-4">
               Limitless Coaching Blueprint

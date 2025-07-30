@@ -3,8 +3,11 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-brand-black text-brand-gray py-10 mt-20 border-t border-gray-800">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-sm">
-        <p className="mb-4 sm:mb-0">&copy; {new Date().getFullYear()} Limitless Progressions. All rights reserved.</p>
+      <div className="max-w-full mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm">
+        <p className="mb-4 sm:mb-0">
+          &copy; {new Date().getFullYear()} Limitless Progressions. All rights
+          reserved.
+        </p>
         <div className="flex space-x-4">
           <a
             href="https://www.tiktok.com/@coach_chris"
