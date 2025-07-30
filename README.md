@@ -18,7 +18,7 @@
 
 ## 📸 Preview
 
-[Insert screenshot or link to deployed version here — e.g., Netlify or Vercel]
+www.limitlessprogressions.com
 
 ---
 
