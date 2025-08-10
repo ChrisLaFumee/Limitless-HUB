@@ -65,7 +65,7 @@ const Hero = () => {
         <img
           src="/Headshot.jpeg"
           alt="Coach Chris"
-          className="w-64 h-64 rounded-full border-4 border-orange-500 shadow-lg"
+          className="w-64 h-64 rounded-full border-4 border-orange-500 shadow-lg object-cover object-center"
         />
       </div>
     </section>
