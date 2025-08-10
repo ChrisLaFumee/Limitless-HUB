@@ -63,7 +63,7 @@ const Hero = () => {
       {/* Headshot Section */}
       <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center">
         <img
-          src="/Headshot.png"
+          src="/Headshot.jpeg"
           alt="Coach Chris"
           className="w-64 h-64 rounded-full border-4 border-orange-500 shadow-lg"
         />
