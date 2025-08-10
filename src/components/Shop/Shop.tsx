@@ -1,7 +1,7 @@
 import React from 'react';
 import DeskAthleteImg from '/src/assets/The-Desk-Athlete.jpg';
 import GymPlanImg from '/src/assets/No-Guess-Gym_Plan.png';
-import CoachingImg from '/src/assets/LP-Headshot.png';
+import CoachingImg from '/src/assets/Limitless_Coaching_Blueprint.png';
 
 const Shop = () => {
   return (
