@@ -35,6 +35,14 @@ const Hero = () => {
           >
             Join the Squad
           </a>
+          <a
+            href="https://tally.so/r/wkLYb6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 border border-brand-orange bg-brand-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition flex items-center justify-center"
+          >
+            12 Week Transformation
+          </a>
         </div>
       </div>
 
