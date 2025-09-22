@@ -20,20 +20,20 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="mt-10 flex flex-wrap justify-center md:justify-start gap-4 max-w-xl">
           <a
-            href="https://calendly.com/limitlessprogressions"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 border border-brand-orange bg-brand-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition flex items-center justify-center"
-          >
-            Book a Call
-          </a>
-          <a
             href="https://tally.so/r/meWEQO"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 border border-brand-orange bg-brand-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition flex items-center justify-center"
           >
             Free Limitless Membership
+          </a>
+          <a
+            href="https://calendly.com/limitlessprogressions"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 border border-brand-orange bg-brand-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition flex items-center justify-center"
+          >
+            Book a Call
           </a>
           <a
             href="https://tally.so/r/wkLYb6"
