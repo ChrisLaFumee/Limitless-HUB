@@ -33,7 +33,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="px-6 py-3 border border-brand-orange bg-brand-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition flex items-center justify-center"
           >
-            Join the Squad
+            Free Limitless Membership
           </a>
           <a
             href="https://tally.so/r/wkLYb6"
