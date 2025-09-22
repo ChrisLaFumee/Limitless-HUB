@@ -11,7 +11,7 @@ const Navbar = () => {
       <ul className="flex space-x-2 sm:space-x-4 lg:space-x-6">
         <li>
           <a href="#hero" className="hover:text-orange-500 transition">
-            Home
+            Hub
           </a>
         </li>
         <li>
