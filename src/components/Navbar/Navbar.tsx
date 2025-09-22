@@ -21,7 +21,7 @@ const Navbar = () => {
         </li>
         <li>
           <a href="#thework" className="hover:text-orange-500 transition">
-            The Work
+            Work
           </a>
         </li>
         <li>
