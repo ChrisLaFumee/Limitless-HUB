@@ -28,28 +28,6 @@ const Hero = () => {
             Book a Call
           </a>
           <a
-            href="#shop"
-            className="px-6 py-3 border border-brand-orange bg-brand-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition"
-          >
-            Shop Now
-          </a>
-          <a
-            href="https://www.youtube.com/@limitlessprogressions"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 border border-brand-orange bg-brand-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition"
-          >
-            Watch on YouTube
-          </a>
-          <a
-            href="https://www.tiktok.com/@coach_chris"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 border border-brand-orange bg-brand-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition"
-          >
-            Watch on TikTok
-          </a>
-          <a
             href="https://tally.so/r/meWEQO"
             target="_blank"
             rel="noopener noreferrer"
