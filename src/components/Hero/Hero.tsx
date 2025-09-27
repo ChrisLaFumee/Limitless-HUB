@@ -43,6 +43,14 @@ const Hero = () => {
           >
             12 Week Transformation
           </a>
+          <a
+            href="https://discord.gg/7DBJzpTz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 border border-brand-orange bg-brand-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition flex items-center justify-center"
+          >
+            The Limitless Hub Discord
+          </a>
         </div>
       </div>
 
