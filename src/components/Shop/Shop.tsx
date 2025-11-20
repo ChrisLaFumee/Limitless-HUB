@@ -1,4 +1,4 @@
-import React from 'react';
+// React import not needed with the new JSX transform
 import DeskAthleteImg from '/src/assets/The-Desk-Athlete.jpg';
 import GymPlanImg from '/src/assets/No-Guess-Gym_Plan.png';
 import CoachingImg from '/src/assets/Limitless_Coaching_Blueprint.png';

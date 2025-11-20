@@ -1,4 +1,4 @@
-import React from 'react';
+// React import not needed with the new JSX transform
 import PatricksImg from '/src/assets/Patricks.jpeg';
 import HarshaImg from '/src/assets/Harsha.jpeg';
 import DeadliftImg from '/src/assets/500 dead.jpeg';
