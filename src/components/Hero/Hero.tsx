@@ -55,6 +55,15 @@ export default function Hero() {
             </a>
 
             <a
+              href="https://tally.so/r/WOJXOL"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-xl border border-white/20 bg-white/5 text-white hover:bg-white/10 transition"
+            >
+              Limitless Workshop Registration
+            </a>
+
+            <a
               href="https://calendly.com/limitlessprogressions"
               target="_blank"
               rel="noopener noreferrer"
