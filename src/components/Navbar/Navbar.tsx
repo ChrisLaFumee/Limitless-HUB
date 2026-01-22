@@ -66,8 +66,8 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#shop" className="hover:text-orange-500 transition">
-                Shop
+              <a href="#coaching" className="hover:text-orange-500 transition">
+                Coaching
               </a>
             </li>
             <li>
@@ -75,9 +75,10 @@ const Navbar = () => {
                 Work
               </a>
             </li>
+
             <li>
-              <a href="#coaching" className="hover:text-orange-500 transition">
-                Coaching
+              <a href="#shop" className="hover:text-orange-500 transition">
+                Shop
               </a>
             </li>
             <li>
