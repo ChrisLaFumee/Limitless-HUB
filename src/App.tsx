@@ -29,9 +29,9 @@ function App() {
 
       {/* Rest of the site on a solid background */}
       <div className="bg-black">
-        <Shop />
-        <TheWork />
         <Coaching />
+        <TheWork />
+        <Shop />
         <Footer />
       </div>
     </div>
