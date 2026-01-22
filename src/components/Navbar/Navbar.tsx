@@ -125,8 +125,11 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#shop" className="block py-2 hover:text-orange-500">
-                  Shop
+                <a
+                  href="#coaching"
+                  className="block py-2 hover:text-orange-500"
+                >
+                  Coaching
                 </a>
               </li>
               <li>
@@ -134,12 +137,10 @@ const Navbar = () => {
                   Work
                 </a>
               </li>
+
               <li>
-                <a
-                  href="#coaching"
-                  className="block py-2 hover:text-orange-500"
-                >
-                  Coaching
+                <a href="#shop" className="block py-2 hover:text-orange-500">
+                  Shop
                 </a>
               </li>
               <li>
