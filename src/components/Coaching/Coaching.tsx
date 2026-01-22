@@ -1,34 +1,6 @@
-import { useEffect } from 'react';
+import lpAppPic from '../../assets/LP-app-pic.jpeg';
 
 const Coaching = () => {
-  useEffect(() => {
-    // configure PT Distinction params on the window before loading their script
-    try {
-      (window as any).ptd_param = {
-        apk: '7CXBWXH4BB1860363',
-        domain: 'https://v3portal.ptdistinction.com',
-      };
-    } catch (err) {
-      // ignore
-    }
-
-    const script = document.createElement('script');
-    script.src =
-      'https://v3portal.ptdistinction.com/v3/inside/integration/v1/portal.js?id=de9dd06362de656c46b67fdf38dd3a24';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // cleanup script and global param
-      try {
-        document.body.removeChild(script);
-      } catch (e) {}
-      try {
-        delete (window as any).ptd_param;
-      } catch (e) {}
-    };
-  }, []);
-
   return (
     <section
       id="coaching"
@@ -58,8 +30,8 @@ const Coaching = () => {
               Virtual Coaching
             </h3>
             <p className="text-gray-400 mb-4">
-              Custom training plans, weekly check-ins, and full support — all
-              remote.
+              Custom training plans, weekly check-ins and accountability, and
+              full support — all remote.
             </p>
             <button className="px-5 py-2 border border-gray-500 text-white rounded-lg font-semibold hover:border-orange-500 hover:text-orange-500 transition">
               Schedule Call
@@ -77,11 +49,11 @@ const Coaching = () => {
             className="cursor-pointer bg-gray-900 rounded-xl p-6 hover:shadow-xl hover:ring-2 hover:ring-orange-500 transition text-left"
           >
             <h3 className="text-2xl font-semibold text-white mb-2">
-              In-Person Coaching
+              Live Coaching
             </h3>
             <p className="text-gray-400 mb-4">
-              One-on-one training sessions available locally. Limited
-              availability.
+              One-on-one training sessions available via video call. Limited
+              availability!
             </p>
             <button className="px-5 py-2 border border-gray-500 text-white rounded-lg font-semibold hover:border-orange-500 hover:text-orange-500 transition">
               Schedule Call
@@ -110,29 +82,20 @@ const Coaching = () => {
             </button>
           </div>
         </div>
-        {/* PT Distinction portal — title + container */}
-        <div className="mt-12 mb-12">
-          <h3 className="text-2xl font-semibold text-orange-500 mb-4 text-center">
-            Online Limitless Training App for the Community
-          </h3>
-
-          <div className="flex justify-center">
-            <div className="w-full max-w-2xl bg-transparent">
-              {/* keep a fixed visible area for the embedded portal; allow internal scrolling
-                 - mobile: shorter height; desktop: taller. Prevent page overflow by capping height. */}
-              <div
-                id="ptd_portal"
-                className="w-full h-[420px] md:h-[560px] max-h-[70vh] mx-auto overflow-auto rounded-md"
-              />
-            </div>
-          </div>
-        </div>
 
         {/* Final CTA */}
-        <div className="mt-16">
+        <div className="mt-6">
           <p className="text-lg text-white mb-4">
             Ready to work together? Book your intro session now.
           </p>
+          <h2 className="text-4xl font-bold text-orange-500 mb-6">
+            Limitless Training App
+          </h2>
+          <img
+            src={lpAppPic}
+            alt="Limitless Training App"
+            className="mx-auto rounded-lg shadow-lg mb-8 max-w-2xl"
+          />
           <a
             href="https://calendly.com/limitlessprogressions"
             target="_blank"
