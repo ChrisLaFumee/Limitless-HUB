@@ -8,7 +8,7 @@ const Shop = () => {
     <section id="shop" className="bg-black text-white py-16 px-6">
       <div className="max-w-full mx-auto">
         <h2 className="text-4xl font-bold text-orange-500 text-center mb-12">
-          Featured Products
+          Featured Store Products
         </h2>
 
         {/* 🧱 Product Grid */}
