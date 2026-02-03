@@ -29,9 +29,10 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-2xl md:max-w-full text-base md:text-xl text-white/90">
-            Built for beginners to advanced. Day to Day grinders, desk athletes,
-            trainers, and high-performers. Plans, tools, and coaching—everything
-            in one place.
+            Built for beginners to advanced. Day to Day grinders looking to
+            improve their daily lives, desk athletes, trainers, and
+            high-performers. Programs, tips & tricks, tools, and coaching—all in
+            one place.
           </p>
 
           {/* CTA row */}
