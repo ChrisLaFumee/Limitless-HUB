@@ -27,11 +27,11 @@ const Coaching = () => {
             className="cursor-pointer bg-gray-900 rounded-xl p-6 hover:shadow-xl hover:ring-2 hover:ring-orange-500 transition text-left"
           >
             <h3 className="text-2xl font-semibold text-white mb-2">
-              Virtual Coaching
+              Limitless Virtual Coaching
             </h3>
             <p className="text-gray-400 mb-4">
-              Custom training plans, weekly check-ins and accountability, and
-              full support — all remote.
+              Custom training programs, weekly check-ins for accountability and
+              progress, and full support — all on the Limitless app.
             </p>
             <button className="px-5 py-2 border border-gray-500 text-white rounded-lg font-semibold hover:border-orange-500 hover:text-orange-500 transition">
               Schedule Call
@@ -49,11 +49,33 @@ const Coaching = () => {
             className="cursor-pointer bg-gray-900 rounded-xl p-6 hover:shadow-xl hover:ring-2 hover:ring-orange-500 transition text-left"
           >
             <h3 className="text-2xl font-semibold text-white mb-2">
-              Live Coaching
+              Live Remote Coaching
             </h3>
             <p className="text-gray-400 mb-4">
-              One-on-one training sessions available via video call. Limited
-              availability!
+              One-on-one training sessions available via video call for live
+              coaching anywhere in the world.
+            </p>
+            <button className="px-5 py-2 border border-gray-500 text-white rounded-lg font-semibold hover:border-orange-500 hover:text-orange-500 transition">
+              Schedule Call
+            </button>
+          </div>
+
+          {/* VIP Coaching */}
+          <div
+            onClick={() =>
+              window.open(
+                'https://calendly.com/limitlessprogressions',
+                '_blank'
+              )
+            }
+            className="cursor-pointer bg-gray-900 rounded-xl p-6 hover:shadow-xl hover:ring-2 hover:ring-orange-500 transition text-left"
+          >
+            <h3 className="text-2xl font-semibold text-white mb-2">
+              Limitless VIP Coaching
+            </h3>
+            <p className="text-gray-400 mb-4">
+              One-on-one training sessions in person available within the
+              Orlando area. Limited availability!
             </p>
             <button className="px-5 py-2 border border-gray-500 text-white rounded-lg font-semibold hover:border-orange-500 hover:text-orange-500 transition">
               Schedule Call
