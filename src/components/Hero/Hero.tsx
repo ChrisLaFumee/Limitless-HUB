@@ -84,13 +84,20 @@ export default function Hero() {
         </div>
 
         {/* Headshot column on the right for desktop */}
-        <div className="md:w-1/3 w-full mt-8 md:mt-0 flex items-start md:items-center justify-center md:justify-end">
+        <div className="md:w-1/3 w-full mt-8 md:mt-0 flex flex-col items-center md:items-center justify-center md:justify-end">
           <img
             src="/Headshot.jpeg"
             alt="Coach Chris"
-            className="w-36 h-36 md:w-48 md:h-48 rounded-full border-4 border-brand-orange shadow-xl object-cover object-center mx-auto md:mx-0"
+            className="w-36 h-36 md:w-48 md:h-48 rounded-full border-4 border-brand-orange shadow-xl object-cover object-center"
             loading="lazy"
           />
+
+          {/* Text box underneath headshot */}
+          <div className="mt-4 w-full max-w-xs bg-black/40 backdrop-blur-sm border border-white/20 rounded-lg p-4 text-center">
+            <p className="text-sm md:text-base text-white/90">
+              Functional Performance Coach with over a decade of experience.
+            </p>
+          </div>
         </div>
 
         {/* Scroll cue removed (unused) */}
