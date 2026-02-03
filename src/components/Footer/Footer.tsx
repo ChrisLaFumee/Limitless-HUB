@@ -10,6 +10,22 @@ const Footer = () => {
         </p>
         <div className="flex space-x-4">
           <a
+            href="https://www.instagram.com/limitless_progressions/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.facebook.com/limitlessprogressionsocala"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition"
+          >
+            Facebook
+          </a>
+          <a
             href="https://www.tiktok.com/@coach_chris"
             target="_blank"
             rel="noopener noreferrer"
