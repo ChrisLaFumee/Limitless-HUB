@@ -30,10 +30,10 @@ export default function Hero() {
 
           <p className="mt-6 max-w-2xl md:max-w-full text-base md:text-xl text-white/90">
             Built for beginners to advanced. Whether you're a day to day to
-            grinder looking to improve their your daily life, a desk athlete
-            working from home and just needing to move,or an all-out
-            high-performer, this is the place for you. Programs, tips & tricks,
-            fitness and nutrition tools, coaching and more—all in one place.
+            grinder looking to improve your daily life, a desk athlete working
+            from home and just needing to move,or an all-out high-performer,
+            this is the place for you. Programs, tips & tricks, fitness and
+            nutrition tools, coaching and more—all in one place.
           </p>
 
           {/* CTA row */}
