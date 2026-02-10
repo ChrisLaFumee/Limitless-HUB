@@ -48,15 +48,6 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://tally.so/r/wkLYb6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl border border-white/20 bg-white/5 text-white hover:bg-white/10 transition"
-            >
-              Desk Athlete Transformation
-            </a>
-
-            <a
               href="https://www.skool.com/limitlessperformancelab"
               target="_blank"
               rel="noopener noreferrer"
@@ -66,12 +57,21 @@ export default function Hero() {
             </a>
 
             <a
+              href="https://tally.so/r/wkLYb6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-xl border border-white/20 bg-white/5 text-white hover:bg-white/10 transition"
+            >
+              Desk Athlete Transformation
+            </a>
+
+            <a
               href="https://calendly.com/limitlessprogressions"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 rounded-xl border border-white/20 bg-white/5 text-white hover:bg-white/10 transition"
             >
-              Book a Call
+              Book a 1 on 1 Call
             </a>
 
             <a
