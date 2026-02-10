@@ -60,7 +60,7 @@ export default function Hero() {
               href="https://tally.so/r/wkLYb6"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl border border-white/20 bg-white/5 text-white hover:bg-white/10 transition"
+              className="px-6 py-3 rounded-xl bg-[#0A66C2] text-white font-bold hover:bg-[#004182] hover:scale-105 transition-all shadow-lg hover:shadow-xl"
             >
               Desk Athlete Transformation
             </a>
@@ -69,7 +69,7 @@ export default function Hero() {
               href="https://calendly.com/limitlessprogressions"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl border border-white/20 bg-white/5 text-white hover:bg-white/10 transition"
+              className="px-6 py-3 rounded-xl bg-gray-700 text-[#FF6B35] font-bold hover:bg-gray-600 hover:scale-105 transition-all shadow-lg hover:shadow-xl"
             >
               Book a 1 on 1 Call
             </a>
@@ -80,7 +80,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="px-6 py-3 rounded-xl bg-[#5865F2] text-white font-bold hover:bg-[#4752C4] hover:scale-105 transition-all shadow-lg hover:shadow-xl"
             >
-              The Limitless Hub Discord
+              The Limitless Discord
             </a>
           </div>
         </div>
