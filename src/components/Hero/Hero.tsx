@@ -42,7 +42,7 @@ export default function Hero() {
               href="https://tally.so/r/meWEQO"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl border border-white/20 bg-white/5 text-white hover:bg-white/10 transition"
+              className="px-6 py-3 rounded-xl bg-black text-[#FF6B35] font-bold hover:bg-gray-900 hover:scale-105 transition-all shadow-lg hover:shadow-xl border border-[#FF6B35]/30"
             >
               Free Limitless Membership
             </a>
@@ -53,16 +53,16 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="px-6 py-3 rounded-xl border border-white/20 bg-white/5 text-white hover:bg-white/10 transition"
             >
-              12-Week Transformation
+              Desk Athlete Transformation
             </a>
 
             <a
               href="https://www.skool.com/limitlessperformancelab"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl border border-white/20 bg-white/5 text-white hover:bg-white/10 transition"
+              className="px-6 py-3 rounded-xl bg-[#FFD43D] text-[#2B5CE7] font-bold hover:bg-[#FFC01E] hover:scale-105 transition-all shadow-lg hover:shadow-xl"
             >
-              Limitless Performance Lab
+              Limitless Performance Lab on SKOOL
             </a>
 
             <a
@@ -78,7 +78,7 @@ export default function Hero() {
               href="https://discord.gg/7DBJzpTz"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl border border-white/20 bg-white/5 text-white hover:bg-white/10 transition"
+              className="px-6 py-3 rounded-xl bg-[#5865F2] text-white font-bold hover:bg-[#4752C4] hover:scale-105 transition-all shadow-lg hover:shadow-xl"
             >
               The Limitless Hub Discord
             </a>
