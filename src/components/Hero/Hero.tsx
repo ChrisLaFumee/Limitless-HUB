@@ -8,7 +8,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-top"
         style={{
-          backgroundImage: "url('/images/limitless-hero.jpg')",
+          backgroundImage: "url('/src/assets/LP-Logo-bg.png')",
           backgroundPosition: 'top center',
         }}
         aria-hidden="true"
