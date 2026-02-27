@@ -1,3 +1,5 @@
+import heroBg from '/src/assets/LP-Logo-bg.png';
+
 export default function Hero() {
   return (
     <section
@@ -8,7 +10,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-top"
         style={{
-          backgroundImage: "url('/src/assets/LP-Logo-bg.png')",
+          backgroundImage: `url(${heroBg})`,
           backgroundPosition: 'top center',
         }}
         aria-hidden="true"
