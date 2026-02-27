@@ -26,41 +26,25 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
     e.preventDefault();
 
     try {
-      // Submit to Tally form
-      const response = await fetch(
-        'https://tally.so/api/forms/meWEQO/submissions',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            data: [
-              {
-                key: 'firstName',
-                value: formData.firstName,
-              },
-              {
-                key: 'lastName',
-                value: formData.lastName,
-              },
-              {
-                key: 'email',
-                value: formData.email,
-              },
-              {
-                key: 'phone',
-                value: formData.phone,
-              },
-            ],
-          }),
-        }
-      );
+      // Save to localStorage as backup
+      const submissions = JSON.parse(localStorage.getItem('formSubmissions') || '[]');
+      submissions.push({
+        ...formData,
+        timestamp: new Date().toISOString(),
+      });
+      localStorage.setItem('formSubmissions', JSON.stringify(submissions));
+
+      // Submit to Vercel API endpoint
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (response.ok) {
-        console.log('Form submitted to Tally successfully');
-      } else {
-        console.error('Failed to submit to Tally');
+        console.log('Form submitted successfully');
       }
     } catch (error) {
       console.error('Error submitting form:', error);
