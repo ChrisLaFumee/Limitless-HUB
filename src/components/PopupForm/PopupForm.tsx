@@ -7,9 +7,10 @@ interface PopupFormProps {
 
 export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
   const [formData, setFormData] = useState({
-    name: '',
-    birthdate: '',
+    firstName: '',
+    lastName: '',
     email: '',
+    phone: '',
   });
   const [submitted, setSubmitted] = useState(false);
 
@@ -36,16 +37,20 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
           body: JSON.stringify({
             data: [
               {
-                key: 'name',
-                value: formData.name,
+                key: 'firstName',
+                value: formData.firstName,
               },
               {
-                key: 'birthdate',
-                value: formData.birthdate,
+                key: 'lastName',
+                value: formData.lastName,
               },
               {
                 key: 'email',
                 value: formData.email,
+              },
+              {
+                key: 'phone',
+                value: formData.phone,
               },
             ],
           }),
@@ -66,7 +71,7 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
     setTimeout(() => {
       onClose();
       setSubmitted(false);
-      setFormData({ name: '', birthdate: '', email: '' });
+      setFormData({ firstName: '', lastName: '', email: '', phone: '' });
     }, 2000);
   };
 
@@ -87,38 +92,39 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label
-                  htmlFor="name"
+                  htmlFor="firstName"
                   className="block text-sm font-medium text-gray-300 mb-2"
                 >
-                  Full Name
+                  First Name
                 </label>
                 <input
                   type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
+                  id="firstName"
+                  name="firstName"
+                  value={formData.firstName}
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 text-white placeholder-gray-500"
-                  placeholder="John Doe"
+                  placeholder="John"
                 />
               </div>
 
               <div>
                 <label
-                  htmlFor="birthdate"
+                  htmlFor="lastName"
                   className="block text-sm font-medium text-gray-300 mb-2"
                 >
-                  Date of Birth
+                  Last Name
                 </label>
                 <input
-                  type="date"
-                  id="birthdate"
-                  name="birthdate"
-                  value={formData.birthdate}
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  value={formData.lastName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 text-white"
+                  className="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 text-white placeholder-gray-500"
+                  placeholder="Doe"
                 />
               </div>
 
@@ -138,6 +144,24 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
                   required
                   className="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 text-white placeholder-gray-500"
                   placeholder="you@example.com"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
+                  Phone Number <span className="text-gray-500">(optional)</span>
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 text-white placeholder-gray-500"
+                  placeholder="(123) 456-7890"
                 />
               </div>
 
