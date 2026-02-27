@@ -14,32 +14,26 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
-    // Submit to Tally form
-    const formData = new URLSearchParams();
+    // Submit to FormSubmit.co
+    const formData = new FormData();
+    formData.append('email', 'limitlessprogressions@gmail.com');
     formData.append('firstName', firstName);
     formData.append('lastName', lastName);
-    formData.append('email', email);
+    formData.append('email_address', email);
     if (phone) {
       formData.append('phone', phone);
     }
 
-    const tallyResponse = await fetch(
-      'https://tally.so/api/forms/meWEQO/submissions',
+    const response = await fetch(
+      'https://formsubmit.co/limitlessprogressions@gmail.com',
       {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: formData.toString(),
+        body: formData,
       }
     );
 
-    if (tallyResponse.ok || tallyResponse.status === 422) {
-      // 422 might still be a successful submission on Tally's end
-      return res.status(200).json({ success: true });
-    }
+    console.log('FormSubmit response:', response.status);
 
-    console.error('Tally response:', tallyResponse.status);
     return res.status(200).json({ success: true });
   } catch (error) {
     console.error('Form submission error:', error);
