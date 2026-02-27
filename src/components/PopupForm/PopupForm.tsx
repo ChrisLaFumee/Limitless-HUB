@@ -27,7 +27,9 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
 
     try {
       // Save to localStorage as backup
-      const submissions = JSON.parse(localStorage.getItem('formSubmissions') || '[]');
+      const submissions = JSON.parse(
+        localStorage.getItem('formSubmissions') || '[]'
+      );
       submissions.push({
         ...formData,
         timestamp: new Date().toISOString(),
