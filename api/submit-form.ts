@@ -14,25 +14,27 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
-    // Submit to FormSubmit.co
-    const formData = new FormData();
-    formData.append('email', 'limitlessprogressions@gmail.com');
-    formData.append('firstName', firstName);
-    formData.append('lastName', lastName);
-    formData.append('email_address', email);
+    // Submit to Formspree
+    const params = new URLSearchParams();
+    params.append('firstName', firstName);
+    params.append('lastName', lastName);
+    params.append('email', email);
     if (phone) {
-      formData.append('phone', phone);
+      params.append('phone', phone);
     }
 
-    const response = await fetch(
-      'https://formsubmit.co/limitlessprogressions@gmail.com',
-      {
-        method: 'POST',
-        body: formData,
-      }
-    );
+    const response = await fetch('https://formspree.io/f/maqdkorr', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: params.toString(),
+    });
 
-    console.log('FormSubmit response:', response.status);
+    const responseData = await response.json();
+    console.log('Formspree response:', response.status);
+    console.log('Formspree data:', responseData);
 
     return res.status(200).json({ success: true });
   } catch (error) {
