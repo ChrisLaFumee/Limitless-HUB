@@ -1,13 +1,31 @@
 import './index.css';
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Shop from './components/Shop/Shop';
 import TheWork from './components/TheWork/TheWork';
 import Hero from './components/Hero/Hero';
 import Footer from './components/Footer/Footer';
 import Coaching from './components/Coaching/Coaching';
+import PopupForm from './components/PopupForm/PopupForm';
 import heroBg from '/src/assets/LP-Logo-bg.png';
 
 function App() {
+  const [showPopup, setShowPopup] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show popup after scrolling 800px down and only once
+      if (window.scrollY > 800 && !hasScrolled) {
+        setShowPopup(true);
+        setHasScrolled(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [hasScrolled]);
+
   return (
     <div className="min-h-screen text-white">
       {/* Top area: background image that covers navbar + hero */}
@@ -34,6 +52,9 @@ function App() {
         <Shop />
         <Footer />
       </div>
+
+      {/* Popup Form */}
+      <PopupForm isOpen={showPopup} onClose={() => setShowPopup(false)} />
     </div>
   );
 }
